@@ -20,21 +20,11 @@
       };
     </script>
     <style>
-      /* Custom scrollbar for webkit */
-      ::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #1e293b;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #475569;
-        border-radius: 4px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #64748b;
-      }
+      /* ...你的样式代码... */
+      ::-webkit-scrollbar { width: 8px; height: 8px; }
+      ::-webkit-scrollbar-track { background: #1e293b; }
+      ::-webkit-scrollbar-thumb { background: #475569; border-radius: 4px; }
+      ::-webkit-scrollbar-thumb:hover { background: #64748b; }
       .checkerboard {
         background-color: #f0f0f0;
         background-image:
@@ -46,9 +36,11 @@
         background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
       }
     </style>
-
-</head>
+  </head>
   <body class="bg-background text-slate-200 antialiased h-screen overflow-hidden">
     <div id="root"></div>
+
+    <script type="module" src="/index.tsx"></script>
+    
   </body>
 </html>

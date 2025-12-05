@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GifShape - Custom GIF Cropper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#0f172a',
+              surface: '#1e293b',
+              primary: '#3b82f6',
+              accent: '#10b981',
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #475569;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #64748b;
+      }
+      .checkerboard {
+        background-color: #f0f0f0;
+        background-image:
+          linear-gradient(45deg, #ccc 25%, transparent 25%),
+          linear-gradient(-45deg, #ccc 25%, transparent 25%),
+          linear-gradient(45deg, transparent 75%, #ccc 75%),
+          linear-gradient(-45deg, transparent 75%, #ccc 75%);
+        background-size: 20px 20px;
+        background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "gif.js.optimized": "https://aistudiocdn.com/gif.js.optimized@^1.0.1",
+    "gifuct-js": "https://aistudiocdn.com/gifuct-js@^2.1.2"
+  }
+}
+
+</script>
+</head>
+  <body class="bg-background text-slate-200 antialiased h-screen overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>

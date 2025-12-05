@@ -1,0 +1,5 @@
+{
+  "name": "gif-tools",
+  "description": "A professional tool to crop GIFs into custom irregular shapes with draggable vertices and transparent export.",
+  "requestFramePermissions": []
+}
